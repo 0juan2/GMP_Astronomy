@@ -1,0 +1,25 @@
+Libreria GMP de C++
+La compilacion está dada por g++
+Un comando de ejemplo para crear un ejecutable puede ser 
+g++ ejemplo.cpp -o ejemplo -lgmpxx -lgmp
+
+La version de GMP de C++ tiene sobrecarga de operadores
+Dentro del codigo hay que incluir
+#include <gmpxx.h>
+
+mpz_class a, b ,c;
+//Para números enteros
+
+mpq_class d, e, f;
+mpq_class d (100);
+mpq_class e (1, 3); 
+1/3
+//Para números Racionales
+
+mpf_init2(mpf_t x, mp_bitcnt_t prec);
+mpf_clears(mpf_t x, ...);
+//Para números Flotantes
+
+
+mpf_set_default_prec(mp_bitcnt_t prec);
+//Precision

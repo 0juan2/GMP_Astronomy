@@ -109,7 +109,11 @@ int main(int argc, char* argv[]) {
 	cout << "n:	" << n <<endl;
 	cout << "p:	" << p <<endl<<endl;
 	mpz_add_ui(p.get_mpz_t(), p.get_mpz_t(), 1);		//p+1
-	cout << "Dia De Pascua: "<< p<<"/"<<n<<"/"<<ano<<endl;
+	if(n==4){
+		cout << "Dia De Pascua: "<< p<<"/Abril/"<<ano<<endl;
+	}else{
+		cout << "Dia De Pascua: "<< p<<"/Marzo/"<<ano<<endl;
+	}
 	return 0;
 }
 
